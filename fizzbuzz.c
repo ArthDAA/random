@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include <stdio.h>
 
 void	ft_putchar(char c)
 {
@@ -20,7 +21,7 @@ void	ft_putstr(char *str)
 char	ft_putnbr(int nb)
 {
 	if (nb == -2147483648)
-		write (1, '-2147483648', 11);
+		write (1, "-2147483648", 11);
 
 	if (nb < 0)
 	{
@@ -42,5 +43,5 @@ char	ft_putnbr(int nb)
 
 int main(int argc, char **argv)
 {
-	write (ft_putnbr(*argv[1]));
+	printf("%s\n", ft_putnbr(22537);
 }
